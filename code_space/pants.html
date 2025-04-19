@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>褲子</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "left main right"
+                "footer footer footer";
+            grid-template-columns: 160px 1fr 200px;
+            grid-template-rows: 100px 1fr 60px;
+            height: 100vh;
+        }
+
+        .container>div {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #A6D6D6;
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left {
+            grid-area: left;
+            background-color: #F4F8D3;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #fff;
+        }
+
+        .right {
+            grid-area: right;
+            background-color: #f9f9f9;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .category {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .item {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Min's Closet 服飾商城</div>
+
+        <div class="left">
+            <div class="category">商品分類</div>
+            <div class="item"><a href="hot.html">🔥 熱銷商品</a></div>
+            <div class="item"><a href="top.html">👕 上衣</a></div>
+            <div class="item"><a href="pants.html">👖 褲子</a></div>
+            <div class="item"><a href="coat.html">🧥 外套</a></div>
+            <div class="item"><a href="dress.html">👗 洋裝</a></div>
+            <div class="item"><a href="accessory.html">🧢 配件</a></div>
+        </div>
+
+        <div class="main">
+            <div class="category">褲子</div>
+            <div class="item">低腰復古附綁繩牛仔七分褲 - $500<br><img src=pic/pants2.jpg alt="七分褲" style="width:auto; border-radius: 8px;">
+            </div>
+            <div class="item">高腰牛仔褲 - $780<br><img src=pic/pants.jpg alt="褲子" style="width:auto; border-radius: 8px;">
+            </div>
+            <div class="item">雙層荷葉邊坑條喇叭九分褲 - $550<br><img src=pic/pants3.jpg alt="喇叭褲" style="width:auto; border-radius: 8px;">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="category">購物車</div>
+            <div class="item">GAP帽踢 ×1</div>
+            <div class="item">合計：$390</div>
+        </div>
+
+        <div class="footer">© 2025 Min's Closet ｜ 聯絡我們：minshop@example.com</div>
+    </div>
+</body>
+
+</html>
